@@ -13,7 +13,7 @@ import java.util.Properties;
  * Created by HinTi on 2019/6/18.
  * Goal: 读取属性文件
  */
-public class PropsUtil {
+public final class PropsUtil {
     public static final Logger LOGGER = LoggerFactory.getLogger(PropsUtil.class);
 
     // 加载属性文件

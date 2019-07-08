@@ -10,7 +10,7 @@ import java.util.Map;
  * Created by HinTi on 2019/6/18.
  * Goal:
  */
-public class CollectionUtil {
+public final class CollectionUtil {
     public static boolean isEmpty(Collection<?> collections){
         return CollectionUtils.isEmpty(collections);
     }

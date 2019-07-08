@@ -10,7 +10,7 @@ import java.lang.reflect.Method;
  * Created by HinTi on 2019/7/5.
  * Goal: ClassHelper 类可以获取所加载的类，但是无法通过类来实例化对象。因为需要提供一个反射工具类，来封装java反射相关的API，对外提供更好用的工具方法。
  */
-public class ReflectionUtil {
+public final class ReflectionUtil {
     public static final Logger LOGGER = LoggerFactory.getLogger(ReflectionUtil.class);
 
     /**
@@ -36,7 +36,7 @@ public class ReflectionUtil {
      * @param args 方法参数
      * @return
      */
-    public static Object invokeMethod(Object obj, Method method,Object[] args){
+    public static Object invokeMethod(Object obj, Method method,Object... args){
         Object result;
         method.setAccessible(true);
         try {
