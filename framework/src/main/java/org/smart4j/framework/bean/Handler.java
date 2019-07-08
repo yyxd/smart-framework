@@ -5,6 +5,7 @@ import java.lang.reflect.Method;
 /**
  * Created by HinTi on 2019/7/6.
  * Goal: 封装Action信息
+ *
  */
 public class Handler {
     // Controller 类
@@ -22,5 +23,7 @@ public class Handler {
     public Method getActionMethod(){
         return actionMethod;
     }
+
+
 
 }
